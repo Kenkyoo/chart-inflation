@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.plot.ly/plotly-2.34.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../node_modules/milligram/dist/milligram.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="column"><h2>Grafica diseñada con plotly</h2></div>
+        <div class="column column-50"><h4>Muestra el aumento de la inflación Argentina en los últimos 12 meses</h4></div>
+      </div>  
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="column column-40">
+        <form>
+          <fieldset>
+            <select id="select">
+              <option value="lines">Lines chart</option>
+              <option value="bar">Bar chart</option>
+              <option value="histogram">Histogram chart</option>
+            </select>
+          </fieldset>
+        </form>
+        </div>
+        <div class="column" id="chart"></div>
+      </div>  
+    </div>    
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="column column-75">
+          <blockquote>
+            <p><em>Yeah!! Milligram is amazing.</em></p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </footer>        
+    <script src="src/index.js"></script>
+    <script type="module" src="src/chart.js"></script>
+</body>
+</html>
