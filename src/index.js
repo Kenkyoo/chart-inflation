@@ -1,6 +1,6 @@
-import axios from './axios';
+import axios from 'axios';
 import { createChart } from './chart.js';
-import $ from "./jquery";
+import $ from "jquery";
 
 var type = 'lines';
 
